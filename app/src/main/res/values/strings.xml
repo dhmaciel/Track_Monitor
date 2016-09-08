@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">TrackMonitor</string>
+
+    <!--Detalhes -->
+    <string name="edt_origem">Origem</string>
+    <string name="edt_destino">Destino</string>
+    <string name="edt_prev_embarque">Previsão de Embarque</string>
+    <string name="edt_prev_entrega">Previsão de Entrega</string>
+    <string name="edt_km_estimado">Km Estimado</string>
+
+</resources>

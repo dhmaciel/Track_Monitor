@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.dmobile.trackmonitor.View.ViagemDetalhesActivity">
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_origem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/edt_origem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/edt_origem"
+                android:editable="false"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_destino"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/input_layout_origem">
+
+            <EditText
+                android:id="@+id/edt_destino"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/edt_destino"
+                android:editable="false"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_stat_file_file_upload"
+            android:layout_below="@+id/input_layout_destino"
+            android:paddingTop="15dp"
+            android:id="@+id/img_destino"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/edt_previsao_embarque"
+            android:paddingTop="20dp"
+            android:paddingLeft="10dp"
+            android:layout_below="@+id/input_layout_destino"
+            android:layout_toRightOf="@+id/img_destino"
+
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_stat_file_file_download"
+            android:layout_below="@+id/img_destino"
+            android:paddingTop="15dp"
+            android:id="@+id/img_entrega"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/edt_previsao_entrega"
+            android:layout_toRightOf="@+id/img_entrega"
+            android:layout_below="@+id/img_destino"
+            android:paddingTop="20dp"
+            android:paddingLeft="10dp"
+
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_stat_maps_navigation"
+            android:layout_below="@+id/edt_previsao_entrega"
+            android:paddingTop="20dp"
+            android:id="@+id/img_km"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/edt_km_estimado2"
+            android:layout_below="@+id/edt_previsao_entrega"
+            android:layout_toRightOf="@+id/img_km"
+            android:paddingTop="20dp"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:paddingLeft="10dp"
+            android:textColor="@color/colorAccent"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>
