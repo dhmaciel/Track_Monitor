@@ -31,19 +31,11 @@ public class MotoristasAdapter extends RecyclerView.Adapter<MotoristasAdapter.Mo
     private Context context;
 
     public static class MotoristaViewHolder extends RecyclerView.ViewHolder {
-        @BindView(R.id.motorista_layout)
+        
         LinearLayout motoristaLayout;
-
-        @BindView(R.id.motor_nome)
         TextView motoristaNome;
-
-        @BindView(R.id.motor_cpf)
         TextView motoristaCpf;
-
-        @BindView(R.id.motor_telefone)
         TextView motoristaTelefone;
-
-        @BindView(R.id.motor_ativo)
         TextView motoristaAtivo;
 
         public MotoristaViewHolder(View view) {
